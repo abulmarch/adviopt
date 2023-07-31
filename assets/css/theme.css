@@ -598,9 +598,19 @@ pre code {
     margin-right: auto;
     margin-left: auto
 }
+.container-testmonial {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+}
 
 @media (min-width:576px) {
     .container {
+        max-width: 540px
+    }
+    .container-testmonial {
         max-width: 540px
     }
 }
@@ -609,10 +619,16 @@ pre code {
     .container {
         max-width: 720px
     }
+    .container-testmonial {
+        max-width: 720px
+    }
 }
 
 @media (min-width:992px) {
     .container {
+        max-width: 960px
+    }
+    .container-testmonial {
         max-width: 960px
     }
 }
@@ -621,10 +637,16 @@ pre code {
     .container {
         max-width: 1140px
     }
+    .container-testmonial {
+        max-width: 1140px
+    }
 }
 
 @media (min-width:1540px) {
     .container {
+        max-width: 1480px
+    }
+    .container-testmonial {
         max-width: 1480px
     }
 }
@@ -16755,7 +16777,7 @@ pre[class*=language-] {
 @media (min-width:768px) {
     .slick-carousel.slick-vertical-dots .slick-dots {
         list-style: none;
-        display: block;
+        display: flex;
         position: absolute;
         right: -35px;
         bottom: 50%;
@@ -16768,6 +16790,8 @@ pre[class*=language-] {
         z-index: 1
     }
 }
+
+
 
 .slick-carousel .slick-dots {
     bottom: -35px;
@@ -19692,4 +19716,67 @@ a.text-white:hover {
 }
 .services:nth-child(7){
     transition-delay: 1200ms;
+}
+.cards-carousel{
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+}
+.cards-carousel .card-carousel{
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    animation: animate 15s infinite linear;
+    animation-delay: calc(3s * var(--delay));
+}
+
+.outer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer:hover .card-carousel{
+    animation-play-state: paused;
+}
+.cards-carousel .card-carousel:last-child{
+    animation-delay: calc(-3s * var(--delay));
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+    }
+    5%, 20% {
+        opacity: 0.4;
+        transform: translateY(100%) scale(0.7);
+    }
+    25%, 40%{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0%) scale(1);
+    }
+    45%, 60%{
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100%{
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
+}
+
+.brand-carousel{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    align-items: center;
+}
+
+ .brand-image{
+    width: 191px;
+    padding: .5rem;
 }
