@@ -606,6 +606,13 @@ pre code {
     margin-left: 5rem;
 }
 
+@media (max-width:576px){
+    .container-testmonial{
+        align-items: center;
+        width: fit-content;
+    }
+}
+
 @media (min-width:576px) {
     .container {
         max-width: 540px
@@ -19722,6 +19729,25 @@ a.text-white:hover {
     place-items: center;
     min-height: 80vh;
 }
+@media (max-width:576px){
+    .phone-mb{
+        margin-bottom: 2rem;
+    }
+    .collaboration{
+        width: 500px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .outer{
+        width: fit-content;
+    }
+    .card-carousel{
+        align-items: center;
+        text-align: center;
+        width: 500px;
+    }
+}
+
 .cards-carousel .card-carousel{
     background: #fff;
     padding: 1.5rem;
@@ -19779,4 +19805,11 @@ a.text-white:hover {
  .brand-image{
     width: 191px;
     padding: .5rem;
+}
+
+@media (max-width:576px) {
+    .brand-image{
+        width: 50px;
+        display: inline-block;
+    }
 }
