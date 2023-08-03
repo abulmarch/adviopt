@@ -19729,6 +19729,24 @@ a.text-white:hover {
     place-items: center;
     min-height: 80vh;
 }
+@media (max-width:425px){
+    .phone-mb{
+        margin-bottom: 5rem;
+    }
+    .collaboration{
+        width: 400px;
+        margin: 0;
+        overflow: hidden;
+    }
+    .outer{
+        width: fit-content;
+    }
+    .card-carousel{
+        align-items: center;
+        text-align: center;
+        width: 500px;
+    }
+}
 @media (max-width:576px){
     .phone-mb{
         margin-bottom: 2rem;
@@ -19774,11 +19792,11 @@ a.text-white:hover {
 @keyframes animate {
     0%{
         opacity: 0;
-        transform: translateY(100%) scale(0.5);
+        transform: translateY(100%) scale(0.0);
     }
     5%, 20% {
         opacity: 0.4;
-        transform: translateY(100%) scale(0.7);
+        transform: translateY(100%) scale(0.5);
     }
     25%, 40%{
         opacity: 1;
@@ -19787,11 +19805,11 @@ a.text-white:hover {
     }
     45%, 60%{
         opacity: 0.4;
-        transform: translateY(-100%) scale(0.7);
+        transform: translateY(-100%) scale(0.5);
     }
     65%, 100%{
         opacity: 0;
-        transform: translateY(-100%) scale(0.5);
+        transform: translateY(-100%) scale(0.0);
     }
 }
 
@@ -19806,10 +19824,22 @@ a.text-white:hover {
     width: 191px;
     padding: .5rem;
 }
+@media (max-width: 768px){
+    .brand-image{
+        width: 111px;
+        display: inline-block;
+    }
+}
+@media (max-width: 1024px){
+    .brand-image{
+        width: 120px;
+        display: inline-block;
+    }
+}
 
 @media (max-width:576px) {
     .brand-image{
-        width: 50px;
+        width: 62px;
         display: inline-block;
     }
 }
