@@ -19843,3 +19843,15 @@ a.text-white:hover {
         display: inline-block;
     }
 }
+
+.type-animation{
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(31), cursor .4s step-end infinite alternate;
+}
+@keyframes typing {
+    from{width: 0;}
+}
+@keyframes cursor {
+    50%{border-color: transparent;}
+}
