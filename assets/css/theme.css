@@ -19796,7 +19796,7 @@ a.text-white:hover {
     }
     5%, 20% {
         opacity: 0.4;
-        transform: translateY(100%) scale(0.5);
+        transform: translateY(100%) scale(0.0);
     }
     25%, 40%{
         opacity: 1;
@@ -19805,7 +19805,7 @@ a.text-white:hover {
     }
     45%, 60%{
         opacity: 0.4;
-        transform: translateY(-100%) scale(0.5);
+        transform: translateY(-100%) scale(0.0);
     }
     65%, 100%{
         opacity: 0;
