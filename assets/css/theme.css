@@ -4036,6 +4036,7 @@ input[type=submit].btn-block {
     display: none
 }
 
+
 .collapsing {
     position: relative;
     height: 0;
@@ -5281,6 +5282,7 @@ input[type=submit].btn-block {
     white-space: nowrap
 }
 
+
 .navbar-brand:focus,
 .navbar-brand:hover {
     text-decoration: none
@@ -5330,7 +5332,7 @@ input[type=submit].btn-block {
     padding: .25rem .75rem;
     font-size: 1.25rem;
     line-height: 1;
-    background-color: transparent;
+    background-color: #05D5FA;
     border: 1px solid transparent;
     border-radius: .25rem
 }
@@ -5341,6 +5343,7 @@ input[type=submit].btn-block {
 }
 
 .navbar-toggler-icon {
+    color: #002C75;
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
