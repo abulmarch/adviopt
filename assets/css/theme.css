@@ -5475,6 +5475,24 @@ input[type=submit].btn-block {
         padding-right: 0;
         padding-left: 0
     }
+    
+}
+
+@media (max-width: 1024px){
+    .navbar-nav{
+        font-size: 14px;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
+}
+@media (max-width: 1199px){
+    .navbar-nav{
+        font-size: 14px;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
 }
 
 @media (min-width:992px) {
@@ -5517,6 +5535,8 @@ input[type=submit].btn-block {
         -ms-flex-preferred-size: auto;
         flex-basis: auto
     }
+    
+    
 
     .navbar-expand-lg .navbar-toggler {
         display: none
@@ -13600,6 +13620,10 @@ button.bg-extra-1:hover {
     .ml-xl-4,
     .mx-xl-4 {
         margin-left: 1.8rem !important
+    }
+    .ml-xl-4-5
+    .mx-xl-4-5 {
+        margin-left: 2.5rem !important
     }
 
     .m-xl-5 {
