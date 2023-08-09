@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 body {
-    background-color: red
+    background-image: url(assets/img/gallery/cover.jpg);
+    background-size: 100vh;
 }
 
 /*!
@@ -79,7 +80,7 @@ body {
     line-height: 1.5;
     color: #fff;
     text-align: left;
-    background-color: #fff;
+    background-image: url(assets/img/gallery/cover.jpg);
     cursor: auto;
 }
 
@@ -593,7 +594,6 @@ pre code {
 
 .container {
     width: 100%;
-    padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto
@@ -2543,7 +2543,9 @@ pre code {
         overflow-x: auto;
         -webkit-overflow-scrolling: touch
     }
-
+    .phone-mb-1{
+        margin-bottom: 5px;
+    }
     .table-responsive-md>.table-bordered {
         border: 0
     }
@@ -5198,7 +5200,7 @@ input[type=submit].btn-block {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    color: #8c919d;
+    color: #002c75;
     background-color: #fff;
     border-color: #e0e1e4 #e0e1e4 #fff
 }
@@ -5414,6 +5416,9 @@ input[type=submit].btn-block {
     .navbar-expand-md>.container-fluid {
         padding-right: 0;
         padding-left: 0
+    }
+    .phone-mb-1{
+        margin-bottom: 5px;
     }
 }
 
@@ -16346,7 +16351,7 @@ pre[class*=language-] {
 .dropdown-menu .nav-item:focus,
 .dropdown-menu .nav-item:hover {
     background-color: #eeeff1;
-    color: #414450
+    color: #002c75
 }
 
 .fit-cover {
@@ -19736,6 +19741,9 @@ a.text-white:hover {
     .phone-mb{
         margin-bottom: 5rem;
     }
+    .phone-mb-1{
+        margin-bottom: 5px;
+    }
     .collaboration{
         width: 400px;
         margin: 0;
@@ -19753,6 +19761,9 @@ a.text-white:hover {
 @media (max-width:576px){
     .phone-mb{
         margin-bottom: 2rem;
+    }
+    .phone-mb-1{
+        margin-bottom: 5px;
     }
     .collaboration{
         width: 500px;
