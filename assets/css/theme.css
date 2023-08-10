@@ -19792,10 +19792,12 @@ a.text-white:hover {
         width: fit-content;
     }
     .card-carousel{
+        margin-top: 1.5rem;
         align-items: center;
         text-align: center;
         width: 500px;
     }
+    
 }
 
 .cards-carousel .card-carousel{
@@ -19806,7 +19808,7 @@ a.text-white:hover {
     pointer-events: none;
     opacity: 0;
     animation: animate 15s infinite linear;
-    animation-delay: calc(3s * var(--delay));
+    animation-delay: calc(5s * var(--delay));
 }
 
 .outer{
@@ -19818,16 +19820,12 @@ a.text-white:hover {
 .outer:hover .card-carousel{
     animation-play-state: paused;
 }
-.cards-carousel .card-carousel:last-child{
+/* .cards-carousel .card-carousel:last-child{
     animation-delay: calc(-3s * var(--delay));
-}
+} */
 @keyframes animate {
-    0%{
+    0%, 20% {
         opacity: 0;
-        transform: translateY(100%) scale(0.0);
-    }
-    5%, 20% {
-        opacity: 0.4;
         transform: translateY(100%) scale(0.0);
     }
     25%, 40%{
@@ -19835,11 +19833,8 @@ a.text-white:hover {
         pointer-events: all;
         transform: translateY(0%) scale(1);
     }
-    45%, 60%{
-        opacity: 0.4;
-        transform: translateY(-100%) scale(0.0);
-    }
-    65%, 100%{
+    
+    45%, 100%{
         opacity: 0;
         transform: translateY(-100%) scale(0.0);
     }
@@ -19888,3 +19883,26 @@ a.text-white:hover {
     50%{border-color: transparent;}
 }
 
+#particles-js{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+#particlescircle-js{
+    position: absolute;
+    width: 100%;
+}
+@media (max-width: 550px) {
+    .no-display{
+        display: none;
+    }
+    .mobile-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .phone-mt{
+        margin-top: 6rem;
+    }
+}
