@@ -10114,7 +10114,9 @@ button.bg-extra-1:hover {
 .m-3 {
     margin: 1rem !important
 }
-
+.mt-24p{
+    margin-top: 24px;
+}
 .mt-3,
 .my-3 {
     margin-top: 1rem !important
