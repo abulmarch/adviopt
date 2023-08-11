@@ -19908,4 +19908,11 @@ a.text-white:hover {
     .phone-mt{
         margin-top: 6rem;
     }
+    .bg-mobile{
+        background-size: contain;
+    }
+    .color-blue{
+        color: #009bde !important;
+        
+    }
 }
