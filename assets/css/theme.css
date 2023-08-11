@@ -19902,6 +19902,9 @@ a.text-white:hover {
         align-items: center;
         text-align: center;
     }
+    .full-screen{
+        height: 100vh;
+    }
     .phone-mt{
         margin-top: 6rem;
     }
