@@ -19903,7 +19903,7 @@ a.text-white:hover {
         text-align: center;
     }
     .full-screen{
-        height: 100vh;
+        height: 100%;
     }
     .phone-mt{
         margin-top: 6rem;
