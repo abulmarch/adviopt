@@ -5267,6 +5267,7 @@ input[type=submit].btn-block {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    padding: 1rem 1rem  1rem 1rem ;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -20020,5 +20021,6 @@ a.text-white:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    
     
   }
