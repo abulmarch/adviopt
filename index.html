@@ -46,7 +46,7 @@
   <!-- ===============================================-->
   
   <main class="main " id="top">
-    <nav class="navbar bg-white navbar-dark sticky-kit navbar-expand-lg  py-3 sticky-kit ">
+    <nav class="navbar bg-white navbar-dark sticky-kit navbar-expand-lg sticky py-3 sticky-kit ">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="assets/img/logos/logo.png" alt="logo" width="200" />
         </a>
@@ -359,7 +359,8 @@
         <div class="row flex-center text-center text-lg-left">
           <div class="col-xl-6 col-lg-5 col-10 mb-6 mb-lg-0 hidden"
             data-zanim-lg='{"animation":"slide-right","delay":0.5,"duration":1.5}'
-            data-zanim-xs='{"delay":0.4,"duration":1.5}'><svg class="h-banner" width="100%" height="100%"
+            data-zanim-xs='{"delay":0.4,"duration":1.5}'>
+            <svg class="h-banner" width="100%" height="100%"
               viewBox="0 0 587 429" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
               <path
@@ -713,6 +714,20 @@
   <!-- ===============================================-->
   <!-- JavaScripts-->
   <!-- ===============================================-->
+  <script>
+    window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
 <script>
   let mybutton = document.getElementById("myBtn");
   window.onscroll = function() {scrollFunction()};

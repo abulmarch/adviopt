@@ -20016,3 +20016,8 @@ a.text-white:hover {
 {
     margin-right: 4.3rem !important
 }
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
