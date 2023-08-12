@@ -46,7 +46,7 @@
   <!-- ===============================================-->
   
   <main class="main " id="top">
-    <nav class="navbar bg-white navbar-dark sticky-kit navbar-expand-lg sticky py-3 sticky-kit ">
+    <nav class="navbar bg-white navbar-dark sticky-kit navbar-expand-lg sticky py-3 sticky-kit " id="navbar">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="assets/img/logos/logo.png" alt="logo" width="200" />
         </a>
@@ -56,23 +56,23 @@
         </button>
         <div class="collapse navbar-collapse ml-xl-5 ml-xxl-9 " id="navbarStandard">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link " id="pluginsNavbarDropdown"
-                href="#about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link " 
+                href="#about"   aria-haspopup="true" aria-expanded="false"
                 style="color: #002c75; ">About Us</a>
 
             </li>
-            <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link " id="utilitiesNavbarDropdown"
-                href="#service" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+            <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link " 
+                href="#service"   aria-haspopup="true" aria-expanded="false"
                 style="color: #002c75; ">Our Services</a>
 
             </li>
             <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link " id="componentsNavbarDropdown"
-                href="#choose" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                href="#choose" role="button"  aria-haspopup="true" aria-expanded="false"
                 style="color: #002c75; ">Why us?</a>
 
             </li>
             <li class="nav-item dropdown dropdown-menu-on-hover "><a class="nav-link" id="pagesNavbarDropdown"
-                href="#collaboration" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                href="#collaboration" role="button"  aria-haspopup="true" aria-expanded="false"
                 style="color: #002c75; ">Collaborations</a>
 
             </li>
@@ -90,7 +90,7 @@
     </nav>
     <a class="nav-item nav-link  social-icon-hover-info hidden-image text-lg-right text-right" onclick="topFunction()" id="myBtn" href="#top" >
       <span class="fas fa-angle-double-up text-warning "  style="font-size: 50px;"></span></a>
-    <section class=" py-xxl-11 py-xl-8 py-lg-6 py-0 ">
+    <section class=" py-xxl-11 py-xl-8 py-lg-6 py-0 mt-lg-6">
       <div class="bg-holder" style="background-image:url(assets/img/gallery/cover.jpg.png);">
       </div>
       <!--/.bg-holder-->
@@ -140,7 +140,7 @@
 
     <!-- ============================================-->
     <!-- <section> begin ============================-->
-    <section class="pb-0 overflow-hidden" id="about">
+    <section class="pb-0 overflow-hidden" id="about" name="about">
 
       <div class="container">
         <div class="row justify-content-center">
@@ -220,13 +220,12 @@
       id="service">
       <div class="bg-holder" style="background-image:url(assets/img/bg-img/by-its-default.png);"></div>
       <!--/.bg-holder-->
-      <div class="container">
-        <div class="row ">
-          <h1 class="text-white fs-xl-5 fs-lg-4 fs-3 hidden-image mb-1">We Provide Rational Solutions & Reliable
-            Services</h1>
+      <div class="container flex-center">
+        <div class="row flex-center">
+          <h1 class="text-white fs-xl-5 fs-lg-4 fs-3 hidden-image mt-2">We Provide Rational Solutions & Reliable Services</h1>
           <div class="col-xxl-10 col-lg-10 col-md-10 ">
             <h3 class="text-white font-weight-bold hidden mt-24p text-center">MANAGEMENT CONSULTANCY SERVICES</h3>
-            <div class="row mt-4 service-motion justify-content-center">
+            <div class="row mt-1 service-motion justify-content-center">
               <div class="col-xl-6 col-lg-7 col-md-5 mt-3 mt-md-0 services hidden">
                 <span class="fa-stack">
                   <span> <img src="assets/img/icons/business.png" width="30"></span>
@@ -363,9 +362,9 @@
             <svg class="h-banner" width="100%" height="100%"
               viewBox="0 0 587 429" fill="none" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path
+              <!-- <path
                 d="M360.547 427.465L250.513 411.354C237.546 409.456 224.927 405.665 213.059 400.103L186.015 387.428C145.323 368.356 122.323 324.508 129.763 280.189C134.557 251.635 151.477 226.554 176.158 211.417L221.275 183.745C242.047 171.004 267.654 168.949 290.192 178.212C315.033 188.422 343.754 184.568 365.261 168.482C380.637 156.981 399.967 151.414 419.088 153.176L427.519 153.952C469.544 157.824 504.568 187.759 514.938 228.668L521.106 253.003C534.055 304.083 515.862 358.01 474.618 390.809L463.363 399.759C434.389 422.8 397.175 432.828 360.547 427.465Z"
-                fill="#FEB850"></path>
+                fill="#FEB850"></path> -->
               <mask id="mask1" style="mask-type: alpha;" maskUnits="userSpaceOnUse" x="0" y="0" width="557"
                 height="420">
                 <path
@@ -624,10 +623,8 @@
       <div id="particlescircle-js" class="full-screen"></div>
       <div class="container">
         <div class="row justify-content-center justify-content-lg-between">
-          <div class="col-lg-2 col-sm-6 flex-center mt-lg-6 mt-xl-6 mb-3">
-            <img src="assets/img/logos/logo.jpg" width="170px">
-          </div>
-          <div class="col-lg-2 col-sm-6  mb-3 ">
+          
+          <div class="col-lg-3 col-sm-6  mb-3 ">
             <h4 class="text-white">Quick Path</h4>
             <div class="nav flex-column mt-3"><a class="nav-item nav-link px-2 pl-0 text-800" href="#about">About us</a>
               <a class="nav-item nav-link px-2 pl-0 text-800" href="#service">Services</a>
@@ -636,7 +633,7 @@
 
             </div>
           </div>
-          <div class="col-lg-5 col-sm-6 mr-auto">
+          <div class="col-lg-6 col-sm-6 mr-auto">
             <h4 class="text-white">Get in touch</h4>
             <div class="media mt-4 text-"><span class=" mr-footer-addrs mt-1 text-warning"
                 data-fa-transform="down-2">Address</span>

@@ -5273,7 +5273,7 @@ input[type=submit].btn-block {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .5rem 1rem
+    padding: .2rem .5rem
 }
 
 .navbar>.container,
@@ -20020,4 +20020,5 @@ a.text-white:hover {
     position: fixed;
     top: 0;
     width: 100%;
+    
   }
