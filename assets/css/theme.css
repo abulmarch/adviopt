@@ -5261,20 +5261,24 @@ input[type=submit].btn-block {
 }
 
 .navbar {
-    position: relative;
+    overflow: hidden;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    padding: 1rem 1rem  1rem 1rem ;
+    transition: 0.4s;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: .2rem .5rem
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    
 }
 
 .navbar>.container,
@@ -5295,7 +5299,7 @@ input[type=submit].btn-block {
 .navbar-brand {
     display: inline-block;
     margin-right: 1rem;
-    font-size: 1.728rem;
+    width: 200;
     line-height: inherit;
     white-space: nowrap
 }
@@ -20021,6 +20025,7 @@ a.text-white:hover {
     position: fixed;
     top: 0;
     width: 100%;
-    
+    padding: 0;
     
   }
+  
