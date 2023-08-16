@@ -5268,7 +5268,7 @@ input[type=submit].btn-block {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    transition: 0.4s;
+    transition: ease-in 2s;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -5297,9 +5297,10 @@ input[type=submit].btn-block {
 }
 
 .navbar-brand {
+    transition: ease-in 1s;
     display: inline-block;
     margin-right: 1rem;
-    width: 200;
+    width: 200px;
     line-height: inherit;
     white-space: nowrap
 }
@@ -5374,6 +5375,10 @@ input[type=submit].btn-block {
     background: no-repeat center center;
     background-size: 100% 100%
 }
+.navbar-brand img{
+    transition: ease-in .5s;
+    width: 180px;
+}
 
 @media (max-width:575.98px) {
 
@@ -5439,6 +5444,9 @@ input[type=submit].btn-block {
     }
     .phone-mb-1{
         margin-bottom: 5px;
+    }
+    .navbar-brand img{
+        width: 131px;
     }
 }
 
@@ -20028,4 +20036,5 @@ a.text-white:hover {
     padding: 0;
     
   }
+  
   

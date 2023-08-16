@@ -21,9 +21,6 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/favicon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon.png">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.png">
-  <link rel="manifest" href="assets/img/favicons/manifest.json">
-  <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
   <meta name="theme-color" content="#ffffff">
 
   <!-- ===============================================-->
@@ -33,10 +30,6 @@
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/9cc0396a4c.js" crossorigin="anonymous"></script>
-  <link href="assets/lib/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/lib/plyr/plyr.css" rel="stylesheet">
-  <link href="assets/lib/slick-carousel/slick.css" rel="stylesheet">
-  <link href="assets/lib/slick-carousel/slick-theme.css" rel="stylesheet">
   <link href="assets/css/theme.css" rel="stylesheet">
 </head>
 
@@ -46,9 +39,9 @@
   <!-- ===============================================-->
   
   <main class="main " id="top">
-    <nav class="navbar bg-white navbar-dark sticky-kit navbar-expand-lg  sticky py-2 sticky-kit " id="navbar">
+    <nav class="navbar bg-white navbar-dark sticky-kit navbar-expand-lg   py-2 sticky-kit " id="navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="assets/img/logos/logo.png" alt="logo" width="200" id="logo" />
+        <a class="navbar-brand" href="index.html"><img src="assets/img/logos/logo.png" alt="logo"  id="logo" />
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarStandard"
           aria-controls="navbarStandard" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,8 +81,10 @@
         </div>
       </div>
     </nav>
+    
     <a class="nav-item nav-link  social-icon-hover-info hidden-image text-lg-right text-right" onclick="topFunction()" id="myBtn" href="#top" >
       <span class="fas fa-angle-double-up text-warning "  style="font-size: 50px;"></span></a>
+
     <section class=" py-xxl-11 py-xl-8 py-lg-6 py-0 mt-lg-6">
       <div class="bg-holder" style="background-image:url(assets/img/gallery/cover.jpg.png);">
       </div>
@@ -712,42 +707,29 @@
   <!-- JavaScripts-->
   <!-- ===============================================-->
   <script>
+    
     window.onscroll = function() {
-        scrollFunction()
+      shrikfunction();
+      scrollFunction();
     };
     var navbar = document.getElementById("navbar");    
-    function scrollFunction() {
-      console.log('hi');
+    var logo = document.getElementById("logo");
+    function shrikfunction() {
         if (document.body.scrollTop > 90 ||
             document.documentElement.scrollTop > 90)
         {
-          navbar.style.padding = "5px 10px";
-    
+          navbar.style.padding = "5px ";
+          logo.style.width = "120px";
+          
         }
         else {
-          navbar.style.padding = "50px 50px";
+          navbar.style.padding = "50px";
+          logo.style.width = "180px";
         }
     }
-  </script>
-  <script>
-    window.onscroll = function() {myFunction()};
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-    
-  } else {
-  
-    navbar.classList.remove("sticky");
-  }
-}
-  </script>
-<script>
   let mybutton = document.getElementById("myBtn");
-  window.onscroll = function() {scrollFunction()};
+  
   function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
@@ -762,9 +744,7 @@ function myFunction() {
 </script>
   <script src="assets/js/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="//threejs.org/examples/js/libs/stats.min.js"></script>
   <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="//threejs.org/examples/js/libs/stats.min.js"></script>
   <script>
 
     particlesJS("particlescircle-js", { "particles": { "number": { "value": 7, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#05d5fa" }, "shape": { "type": "polygon", "stroke": { "width": 0, "color": "#000" }, "polygon": { "nb_sides": 6 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.2, "random": true, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 160, "random": false, "anim": { "enable": true, "speed": 15, "size_min": 40, "sync": false } }, "line_linked": { "enable": false, "distance": 200, "color": "#ffffff", "opacity": 1, "width": 2 }, "move": { "enable": true, "speed": 8, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false, "mode": "grab" }, "onclick": { "enable": false, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
@@ -773,7 +753,6 @@ function myFunction() {
 
     particlesJS("particles-js", { "particles": { "number": { "value": 30, "density": { "enable": false, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true }); var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function () { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
   </script>
-  <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
   <script src="assets/js/plugins.js"></script>
   <script src="assets/lib/is/is.min.js"></script>
@@ -783,11 +762,6 @@ function myFunction() {
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"> </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"> </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <script
-    src="../../cdn.polyfill.io/v2/polyfill.min85ed.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
-  <script src="assets/lib/plyr/plyr.min.js"></script>
-  <script src="assets/lib/slick-carousel/slick.min.js"></script>
-  <script src="assets/js/theme.js"></script>
 
   <script>
     const observer = new IntersectionObserver((entries) => {
